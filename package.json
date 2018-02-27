@@ -1,0 +1,31 @@
+{
+  "name": "pipeline",
+  "version": "1.0.0",
+  "description": "Functional pipelines with Redux & React",
+  "main": "index.js",
+  "repository": "https://github.com/anthonyshull/pipeline",
+  "author": "Anthony Shull",
+  "license": "MIT",
+  "scripts": {
+    "watch": "webpack --config webpack.config.js --watch"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-2017": "^0.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-es2017": "^6.24.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
+    "sanctuary": "^0.14.1"
+  }
+}
