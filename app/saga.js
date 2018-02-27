@@ -1,7 +1,7 @@
 import { takeEvery, eventChannel } from 'redux-saga';
 import { put, call, take } from 'redux-saga/effects';
 
-import { RANDOM_INT_RECEIVED, INITIALIZED } from './actions';
+import { RANDOM_INT_RECEIVED, INITIALIZE } from './actions';
 
 function* createEventChannel() {
   return eventChannel(emit => {
@@ -25,6 +25,6 @@ function* initializeWebSocketChannel() {
 
 export default function* saga() {
   yield [
-    takeEvery('INITIALIZE', initializeWebSocketChannel)
+    takeEvery(INITIALIZE, initializeWebSocketChannel)
   ];
 }
