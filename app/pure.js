@@ -15,7 +15,7 @@ const length = arr => arr.length;
 
 // isFinite :: num -> Maybe num
 const isFinite = num => {
-  return (num === Infinity || num === - Infinity) ? Nothing : Just(num);
+  return (num === Infinity || num === -Infinity) ? Nothing : Just(num);
 };
 
 // safeLength :: [str] -> Maybe int
