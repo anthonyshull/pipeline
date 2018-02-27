@@ -50,7 +50,7 @@ const floatDisplay = float => float.toFixed(2);
 
 // safeAvg :: [ints] -> Maybe float
 const safeAvg = ints => {
-  return length(ints) === 0 ? Nothing : Just(sum(ints) / ints.length);
+  return length(ints) === 0 ? Nothing : Just(sum(ints) / length(ints));
 };
 
 // safeAvg :: [str] -> Maybe str

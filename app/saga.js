@@ -5,7 +5,7 @@ import { RANDOM_INT_RECEIVED, INITIALIZED } from './actions';
 
 function* createEventChannel() {
   return eventChannel(emit => {
-    const ws = new WebSocket("ws://165.227.72.0:9999");
+    const ws = new WebSocket("ws://127.0.0.1:9999");
     ws.onmessage = msg => {
       return emit(msg);
     };
