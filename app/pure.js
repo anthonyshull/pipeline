@@ -43,7 +43,7 @@ const safeIntDisplay = fn => {
     chain(isFinite),
     map(toString)
   ]);
-}
+};
 
 // floatDisplay :: float -> float
 const floatDisplay = float => float.toFixed(2);
@@ -78,4 +78,4 @@ export default function Pure(props) {
       </tr>
     </table>
   );
-}
+};
